@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>FORM</title>
+<script src="h.js" defer></script>
+</head>
+
+<body>
+
+<form action="mysql.php" method="POST"  id="form" enctype="multipart/form-data">
+
+ ID:<input id="userid" type="text" name="userid" placeholder="Enter your ID" >
+<span id="error"> </span>     
+ <br/><br/><br/><br/>
+
+Name:<input id="username" type="text" name="user" placeholder="Enter your name" >
+<span id="errorname"></span><br> 
+<br/><br/><br/>
+password:
+<input type="password" id="password" name="pass">
+<span id="passerror"></span><br/><br/><br/>
+Email:
+<input type="email" id="email" name="email">
+<span id="emailerror"> </span>
+<br/><br/><br>
+
+BRANCH:<select name="select" id="select">
+    <option value="choose" >choose a branch</option>
+<option >CSE</option>
+<option >ECE</option>
+<option >EEE</option>
+<option>CE</option>
+<option>ME</option>
+<option>MME</option>
+
+</select>
+
+<span id="errorbranch"></span>
+ 
+<br/><br/><br/>
+
+YEAR:<input id="year" type="text" name="year" placeholder="Enter the year of study">
+<span id="erroryear"></span></div>
+<br/>
+<br/>
+<input type="file" name="image" id="file"><br/><br>
+
+<span name="fileerror"></span><br/> 
+
+favcolor:<input id="checkbox" type="checkbox" name="color" checked>red;
+<input type="checkbox"  id="checkbox" name="color" >black;
+<input type="checkbox"  id="checkbox" name="color"  >blue;
+<input type="checkbox"  id="checkbox" name="color"  >green;
+<span id="checkerr">
+</span><br/>
+ 
+<input type="submit" name="submit" value="submit" onclick="validate()">
+
+</form>
+  
+ 
