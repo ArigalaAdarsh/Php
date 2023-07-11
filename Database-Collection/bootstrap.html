@@ -1,0 +1,102 @@
+
+ 
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>Bootstrap Example</title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ 
+ 
+</head>
+
+<body  >
+        <div class="container-fluid">
+        <div class="row">
+         <div class="col-sm-1"></div> 
+        <div class="col-sm-5">
+          <img src=".\4707071.jpg"   class="img-fluid"  title="register" width="600px" height="800px"  > 
+        </div>
+          <div class="col-sm-4">
+         <h1 align="center">Registration Form</h1><br/>
+
+        <form method="POST" action="boot.php" >
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control " name="name1" id="name" placeholder="Enter your name" >
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control " name="email" id="email" placeholder="Enter your mail" >
+
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" >
+        </div>
+        <div class="form-group">
+        <label for="gender">Gender:</label>
+        <div class="radio">
+          <label><input type="radio" name="sex" value="male" >Male</label>
+         <label><input type="radio"  name="sex" value="Female">Female</label>
+         <label><input type="radio"   name="sex" value="I dont now" checked>Others</label>
+        </div>
+
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone number:</label>
+            <input type="tel" class="form-control" id="phone" name="phone1"   >
+        </div>
+        <div class="form-group">
+            <label for="select">Branch:</label>
+            <select id="select" name="branch" class="form-control">
+            <option value="not ">Choose Subject</option>
+
+            <option value="CSE" selected>CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="MECH">MECH</option>
+            <option value=" CHEMICAL">CHEMICAL</option>
+            <option value="EEE">EEE</option>
+        </select>
+           </div>
+           <div class="form-group">
+            <div calss="checkbox">
+
+                <label for="sub">Subject:</label><br/>
+               <div style="padding-left:60px;">
+                <label><input type="checkbox" value="WT" name="sub[]" checked>WT</label><br/>
+                <label><input type="checkbox" value="COA" name="sub[]">COA</label><br/>
+                <label><input type="checkbox" value="CD" name="sub[]">CD</label><br/>
+                <label><input type="checkbox" value="DSP" name="sub[]">DSP</label><br/>
+                </div>
+            </div>
+         </div>
+         <div class="form-group" align="center">
+          <button type="reset" class="btn btn-warning"   >Reset</button>
+ 
+          &nbsp; &nbsp; &nbsp;
+
+         <button type="submit" class="btn btn-primary" >Register</button>
+
+      </div>
+      </form>
+     </div>
+
+     <div class="col-sm-1"></div> 
+</div>
+     
+</div> 
+</body>
+
+</html>
+
+​
+
